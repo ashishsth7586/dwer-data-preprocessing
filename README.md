@@ -7,3 +7,7 @@ generate the hourly average of the data, deletes the older records from the data
 loads the data to db.
 Note: The station file may consists of Meteorological Data and Air Quality data seperately and together. Based on this,
 we have to upload the file to the db.
+
+# upload.sh
+This is a bash script (AWS CLI), that loads all the files (script and python dependencies) creating a .zip
+to AWS lambda.
