@@ -1,17 +1,17 @@
-zip -r9u function.zip urllib3 s3transfer pytz psycopg2_binary.libs psycopg2 pandas numpy.libs numpy jmespath docutils dateutil botocore boto3 bin six.py lambda_function.py __init__.py MetaData.json
+zip -r9u function.zip *all the packagees, Metadata and the Script*
 aws lambda update-function-code \
-    --function-name  dwerETL \
+    --function-name  <lambda-function-name> \
     --zip-file fileb://function.zip
 aws lambda update-function-configuration \
-    --function-name dwerETL \
+    --function-name <lambda-function-name> \
     --environment Variables="
     {
-    FILEPATH_METADATA = 'MetaData.json',
-    DB_HOST = 'supplychain-db-prod.cluster-cpjaqbvxpfdq.ap-southeast-2.rds.amazonaws.com',
-    DB_PORT = '5432',
-    DB_NAME = 'dwer_prod_clone',
-    DB_USER = 'postgres',
-    DB_PASSWORD = 'DlRkndOPhbYOs4q7usMI',
-    SAMPLING_FREQUENCY = 'H'
+    FILEPATH_METADATA = '<path to Metadata>',
+    DB_HOST = 'DB_HOST',
+    DB_PORT = 'PORT',
+    DB_NAME = 'DB_NAME',
+    DB_USER = 'DB_USER',
+    DB_PASSWORD = 'DB_PASSWORD',
+    SAMPLING_FREQUENCY = 'SAMPLING_FREQUENCY'
     }"
 rm function.zip
