@@ -1,0 +1,5 @@
+boto3
+pandas
+numpy
+psycopg2-binary
+memory_profiler
