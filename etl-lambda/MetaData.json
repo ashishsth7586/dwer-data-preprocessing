@@ -1,0 +1,870 @@
+{
+    "translations": [
+        {
+            "filename": "albany_particles_2011.csv",
+            "filetype": "MA",
+            "stationame": "albany",
+            "stationid": 1,
+            "columnnames": {
+                "date": "datetime",
+                "sp10": "sp10",
+                "dn10": "dn10",
+                "sg10": "sg10",
+                "at02": "at02",
+                "Pres": "pres",
+                "t10": "pm10"
+            }
+        },
+        {
+            "filename": "bunbury_aqms_2011.csv",
+            "filetype": "MA",
+            "stationame": "bunbury",
+            "stationid": 2,
+            "columnnames": {
+                "date": "datetime",
+                "sp10": "sp10",
+                "dn10": "dn10",
+                "sg10": "sg10",
+                "at10": "at10",
+                "rh10": "rh10",
+                "Pres": "pres",
+                "t2.5": "pm2_5",
+                "t10": "pm10"
+            }
+        },
+        {
+            "filename": "busselton_aqms_2011.csv",
+            "filetype": "MA",
+            "stationame": "busselton",
+            "stationid": 3,
+            "columnnames": {
+                "date": "datetime",
+                "sp10": "sp10",
+                "dn10": "dn10",
+                "sg10": "sg10",
+                "at10": "at10",
+                "rh10": "rh10",
+                "Pres": "pres",
+                "t2.5": "pm2_5"
+            }
+        },
+        {
+            "filename": "caversham_aqms_2011.csv",
+            "filetype": "A",
+            "stationame": "caversham",
+            "stationid": 4,
+            "columnnames": {
+                "date": "datetime",
+                "t2.5": "pm2_5",
+                "t10": "pm10",
+                "co": "co",
+                "no": "no",
+                "no2": "no2",
+                "nox": "nox",
+                "o3": "o3"
+            }
+        },
+        {
+            "filename": "caversham_met_2011.csv",
+            "filetype": "M",
+            "stationame": "caversham",
+            "stationid": 4,
+            "columnnames": {
+                "date": "datetime",
+                "sp10": "sp10",
+                "dn10": "dn10",
+                "sg10": "sg10",
+                "at10": "at10",
+                "rh10": "rh10",
+                "Pres": "pres",
+                "rain": "rain",
+                "swin": "swin",
+                "lwin": "lwin",
+                "lwot": "lwout",
+                "nrad": "nrad"
+            }
+        },
+        {
+            "filename": "collie_particles_2011.csv",
+            "filetype": "MA",
+            "stationame": "collie",
+            "stationid": 5,
+            "columnnames": {
+                "date": "datetime",
+                "sp04": "sp04",
+                "dn04": "dn04",
+                "sg04": "sg04",
+                "at02": "at02",
+                "Pres": "pres",
+                "t10": "pm10"
+            }
+        },
+        {
+            "filename": "duncraig_aqms_2011.csv",
+            "filetype": "A",
+            "stationame": "duncraig",
+            "stationid": 6,
+            "columnnames": {
+                "date": "datetime",
+                "t2.5": "pm2_5",
+                "t10": "pm10",
+                "co": "co",
+                "no": "no",
+                "no2": "no2",
+                "nox": "nox"
+            }
+        },
+        {
+            "filename": "duncraig_met_2011.csv",
+            "filetype": "M",
+            "stationame": "duncraig",
+            "stationid": 6,
+            "columnnames": {
+                "date": "datetime",
+                "sp10": "sp10",
+                "dn10": "dn10",
+                "sg10": "sg10",
+                "at10": "at10",
+                "rh10": "rh10"
+            }
+        },
+        {
+            "filename": "geraldton_particles_2011.csv",
+            "filetype": "MA",
+            "stationame": "geraldton",
+            "stationid": 7,
+            "columnnames": {
+                "date": "datetime",
+                "sp10": "sp10",
+                "dn10": "dn10",
+                "sg10": "sg10",
+                "at02": "at02",
+                "Pres": "pres",
+                "t2.5": "pm2_5",
+                "t10": "pm10"
+            }
+        },
+        {
+            "filename": "kalgoorlie_aqms_2017.csv",
+            "filetype": "A",
+            "stationame": "kalgoorlie",
+            "stationid": 8,
+            "columnnames": {
+                "date": "datetime",
+                "t2.5": "pm2_5",
+                "t10": "pm10",
+                "so2": "so2",
+                "co": "co"
+            }
+        },
+        {
+            "filename": "kalgoorlie_met_2017.csv",
+            "filetype": "M",
+            "stationame": "kalgoorlie",
+            "stationid": 8,
+            "columnnames": {
+                "date": "datetime",
+                "sp10": "sp10",
+                "dn10": "dn10",
+                "sg10": "sg10",
+                "at10": "at10",
+                "rh10": "rh10",
+                "Pres": "pres",
+                "grad": "grad",
+                "nrad": "nrad"
+            }
+        },
+        {
+            "filename": "mandurah_aqms_2019.csv",
+            "filetype": "A",
+            "stationame": "mandurah",
+            "stationid": 9,
+            "columnnames": {
+                "date": "datetime",
+                "t2.5": "pm2_5",
+                "t10": "pm10",
+                "so2": "so2",
+                "co": "co",
+                "no": "no",
+                "no2": "no2",
+                "nox": "nox",
+                "o3": "o3"
+            }
+        },
+        {
+            "filename": "mandurah_met_2019.csv",
+            "filetype": "M",
+            "stationame": "mandurah",
+            "stationid": 9,
+            "columnnames": {
+                "date": "datetime",
+                "sp10": "sp10",
+                "dn10": "dn10",
+                "sg10": "sg10",
+                "at10": "at10",
+                "rh10": "rh10",
+                "Pres": "pres"
+            }
+        },
+        {
+            "filename": "quinns_rock_aqms_2011.csv",
+            "filetype": "A",
+            "stationame": "quinns_rocks",
+            "stationid": 10,
+            "columnnames": {
+                "date": "datetime",
+                "t2.5": "pm2_5",
+                "t10": "pm10",
+                "no": "no",
+                "no2": "no2",
+                "nox": "nox",
+                "o3": "o3"
+            }
+        },
+        {
+            "filename": "quinns_rock_met_2011.csv",
+            "filetype": "M",
+            "stationame": "quinns_rocks",
+            "stationid": 10,
+            "columnnames": {
+                "date": "datetime",
+                "sp10": "sp10",
+                "dn10": "dn10",
+                "sg10": "sg10",
+                "at10": "at10",
+                "rh10": "rh10"
+            }
+        },
+        {
+            "filename": "rockingham_aqms_2011.csv",
+            "filetype": "A",
+            "stationame": "rockingham",
+            "stationid": 11,
+            "columnnames": {
+                "date": "datetime",
+                "so2": "so2",
+                "no": "no",
+                "no2": "no2",
+                "nox": "nox",
+                "o3": "o3"
+            }
+        },
+        {
+            "filename": "rockingham_met_2011.csv",
+            "filetype": "M",
+            "stationame": "rockingham",
+            "stationid": 11,
+            "columnnames": {
+                "date": "datetime",
+                "sp10": "sp10",
+                "dn10": "dn10",
+                "sg10": "sg10",
+                "at10": "at10",
+                "rh10": "rh10"
+            }
+        },
+        {
+            "filename": "rolling_green_aqms_2011.csv",
+            "filetype": "A",
+            "stationame": "rolling_green",
+            "stationid": 12,
+            "columnnames": {
+                "date": "datetime",
+                "no": "no",
+                "no2": "no2",
+                "nox": "nox",
+                "o3": "o3"
+            }
+        },
+        {
+            "filename": "rolling_green_met_2011.csv",
+            "filetype": "M",
+            "stationame": "rolling_green",
+            "stationid": 12,
+            "columnnames": {
+                "date": "datetime",
+                "sp10": "sp10",
+                "dn10": "dn10",
+                "sg10": "sg10",
+                "at10": "at10",
+                "rh10": "rh10"
+            }
+        },
+        {
+            "filename": "south_lake_aqms_2011.csv",
+            "filetype": "A",
+            "stationame": "south_lake",
+            "stationid": 13,
+            "columnnames": {
+                "date": "datetime",
+                "t2.5": "pm2_5",
+                "t10": "pm10",
+                "so2": "so2",
+                "co": "co",
+                "no": "no",
+                "no2": "no2",
+                "nox": "nox",
+                "o3": "o3"
+            }
+        },
+        {
+            "filename": "south_lake_met_2011.csv",
+            "filetype": "M",
+            "stationame": "south_lake",
+            "stationid": 13,
+            "columnnames": {
+                "date": "datetime",
+                "sp10": "sp10",
+                "dn10": "dn10",
+                "sg10": "sg10",
+                "at10": "at10",
+                "rh10": "rh10"
+            }
+        },
+        {
+            "filename": "swanbourne_aqms_2011.csv",
+            "filetype": "A",
+            "stationame": "swanbourne",
+            "stationid": 14,
+            "columnnames": {
+                "date": "datetime",
+                "no": "no",
+                "no2": "no2",
+                "nox": "nox",
+                "o3": "o3"
+            }
+        },
+        {
+            "filename": "swanbourne_met_2011.csv",
+            "filetype": "M",
+            "stationame": "swanbourne",
+            "stationid": 14,
+            "columnnames": {
+                "date": "datetime",
+                "sp10": "sp10",
+                "dn10": "dn10",
+                "sg10": "sg10",
+                "at10": "at10",
+                "rh10": "rh10"
+            }
+        },
+        {
+            "filename": "wattleup_aqms_2011.csv",
+            "filetype": "A",
+            "stationame": "wattleup",
+            "stationid": 15,
+            "columnnames": {
+                "date": "datetime",
+                "so2": "so2"
+            }
+        },
+        {
+            "filename": "wattleup_met_2011.csv",
+            "filetype": "M",
+            "stationame": "wattleup",
+            "stationid": 15,
+            "columnnames": {
+                "date": "datetime",
+                "sp10": "sp10",
+                "dn10": "dn10",
+                "sg10": "sg10",
+                "at10": "at10",
+                "rh10": "rh10",
+                "Pres": "pres",
+                "swin": "swin"
+            }
+        },
+        {
+            "filename": "albany_raw_data.csv",
+            "filetype": "MA",
+            "stationame": "albany",
+            "stationid": 1,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "WSp": "sp10",
+                "Gust": "gu10",
+                "WDir": "dn10",
+                "Sigma": "sg10",
+                "AmbTem_Avg": "at10",
+                "AmbPre_Avg": "pres",
+                "PM10MC_Avg": "pm10"
+            }
+        },
+        {
+            "filename": "armadale_raw_data.csv",
+            "filetype": "MA",
+            "stationame": "armadale",
+            "stationid": 16,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "Wind Speed": "sp10",
+                "Gust": "gu10",
+                "Wind Direction": "dn10",
+                "Sigma Theta": "sg10",
+                "Air Temp": "at10",
+                "Rel Humidity": "rh10",
+                "Amb Press": "pres",
+                "PM2.5": "pm2_5",
+                "PM10": "pm10",
+                "PMc": "pmcrs"
+            }
+        },
+        {
+            "filename": "bunbury_Raw_Data.csv",
+            "filetype": "MA",
+            "stationame": "bunbury",
+            "stationid": 2,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "WSp": "sp10",
+                "Gust": "gu10",
+                "WDir": "dn10",
+                "Sigma": "sg10",
+                "AT": "at10",
+                "RH": "rh10",
+                "AmbP": "pres",
+                "PM25MC_Avg": "pm2_5",
+                "PM10MC_Avg": "pm10",
+                "PMcMC_Avg": "pmcrs"
+            }
+        },
+        {
+            "filename": "busselton_Raw_Data.csv",
+            "filetype": "MA",
+            "stationame": "busselton",
+            "stationid": 3,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "Wind Speed": "sp10",
+                "Wind Gust": "gu10",
+                "WDir": "dn10",
+                "Sigma Theta": "sg10",
+                "AT10": "at10",
+                "RH10": "rh10",
+                "Amb Press": "pres",
+                "PM2.5": "pm2_5",
+                "PM10": "pm10",
+                "PMc": "pmcrs"
+            }
+        },
+        {
+            "filename": "caversham_Raw_Data.csv",
+            "filetype": "A",
+            "stationame": "caversham",
+            "stationid": 4,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "PM2.5": "pm2_5",
+                "PM10": "pm10",
+                "PMc": "pmcrs",
+                "SO2_ppb": "so2",
+                "CO_ppm": "co",
+                "NO_ppb": "no",
+                "NO2_ppb": "no2",
+                "NOx_ppb": "nox",
+                "O3_ppb": "o3"
+            }
+        },
+        {
+            "filename": "Caversham_Met_Raw_Data.csv",
+            "filetype": "M",
+            "stationame": "caversham",
+            "stationid": 4,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "WSp": "sp10",
+                "Gust": "gu10",
+                "WDir": "dn10",
+                "Sigma": "sg10",
+                "AT02": "at02",
+                "AT10": "at10",
+                "DelT": "delt",
+                "RH": "rh10",
+                "AtPr": "pres",
+                "Rain": "rain",
+                "SWin": "swin",
+                "SWout": "swout",
+                "LWin": "lwin",
+                "LWout": "lwout",
+                "Net": "nrad"
+            }
+        },
+        {
+            "filename": "collie_Raw_Data.csv",
+            "filetype": "MA",
+            "stationame": "collie",
+            "stationid": 5,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "WSp": "sp04",
+                "Gust": "gu04",
+                "WDir": "dn04",
+                "Sigma": "sg04",
+                "AmbTem_Avg": "at02",
+                "AmbPre_Avg": "pres",
+                "PM10MC_Avg": "pm10"
+            }
+        },
+        {
+            "filename": "duncraig_Raw_Data.csv",
+            "filetype": "A",
+            "stationame": "duncraig",
+            "stationid": 6,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "PM2.5 Mass Conc": "pm2_5",
+                "PM10 Mass Conc": "pm10",
+                "PMC Mass Conc": "pmcrs",
+                "SO2": "so2",
+                "CO": "co",
+                "NO": "no",
+                "NO2": "no2",
+                "NOx": "nox",
+                "O3": "o3"
+            }
+        },
+        {
+            "filename": "duncraig_Met_Raw_Data.csv",
+            "filetype": "M",
+            "stationame": "duncraig",
+            "stationid": 6,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "WSp": "sp10",
+                "Gust": "gu10",
+                "WDir": "dn10",
+                "Sigma": "sg10",
+                "AT10": "at10",
+                "RH": "rh10"
+            }
+        },
+        {
+            "filename": "geraldton_Raw_Data.csv",
+            "filetype": "MA",
+            "stationame": "geraldton",
+            "stationid": 7,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "WSp": "sp10",
+                "Gust": "gu10",
+                "WDir": "dn10",
+                "Sigma": "sg10",
+                "PM10_AmbTem": "at10",
+                "PM10_AmbPre": "pres",
+                "PM2.5MC": "pm2_5",
+                "PM10MC": "pm10"
+            }
+        },
+        {
+            "filename": "kalgoorlie_Raw_Data.csv",
+            "filetype": "A",
+            "stationame": "kalgoorlie",
+            "stationid": 8,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "PM2.5": "pm2_5",
+                "PM10": "pm10",
+                "PMc": "pmcrs",
+                "SO2": "so2",
+                "CO": "co",
+                "NO": "no",
+                "NO2": "no2",
+                "NOx": "nox",
+                "O3": "o3"
+            }
+        },
+        {
+            "filename": "kalgoorlie_Met_Raw_Data.csv",
+            "filetype": "M",
+            "stationame": "kalgoorlie",
+            "stationid": 8,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "WSp": "sp10",
+                "Gust": "gu10",
+                "WDir": "dn10",
+                "Sigma": "sg10",
+                "AT02": "at02",
+                "AT10": "at10",
+                "DelT": "delt",
+                "RH02": "rh02",
+                "RH10": "rh10",
+                "AtPr": "pres",
+                "Global": "grad",
+                "NetRad": "nrad"
+            }
+        },
+        {
+            "filename": "mandurah_Raw_Data.csv",
+            "filetype": "A",
+            "stationame": "mandurah",
+            "stationid": 9,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "PM2.5": "pm2_5",
+                "PM10": "pm10",
+                "PMc": "pmcrs",
+                "SO2": "so2",
+                "CO": "co",
+                "NO": "no",
+                "NO2": "no2",
+                "NOx": "nox",
+                "O3": "o3"
+            }
+        },
+        {
+            "filename": "mandurah_Met_Raw_Data.csv",
+            "filetype": "M",
+            "stationame": "mandurah",
+            "stationid": 9,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "SP10": "sp10",
+                "GS10": "gu10",
+                "DN10": "dn10",
+                "SG10": "sg10",
+                "AT10": "at10",
+                "RH10": "rh10",
+                "PR10": "pres"
+            }
+        },
+        {
+            "filename": "quinns_rock_Raw_Data.csv",
+            "filetype": "A",
+            "stationame": "quinns_rocks",
+            "stationid": 10,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "PM25MC_Avg": "pm2_5",
+                "PM10MC_Avg": "pm10",
+                "PMcMC_Avg": "pmcrs",
+                "SO2": "so2",
+                "CO": "co",
+                "NO": "no",
+                "NO2": "no2",
+                "NOx": "nox",
+                "O3": "o3"
+            }
+        },
+        {
+            "filename": "quinns_rock_Met_Raw_Data.csv",
+            "filetype": "M",
+            "stationame": "quinns_rocks",
+            "stationid": 10,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "WSp10": "sp10",
+                "Gust": "gu10",
+                "WDir": "dn10",
+                "Sigma Theta": "sg10",
+                "AT10": "at10",
+                "RH10": "rh10"
+            }
+        },
+        {
+            "filename": "rockingham_Raw_Data.csv",
+            "filetype": "A",
+            "stationame": "rockingham",
+            "stationid": 11,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "SO2": "so2",
+                "NO": "no",
+                "NO2": "no2",
+                "NOx": "nox",
+                "O3": "o3"
+            }
+        },
+        {
+            "filename": "rockingham_Met_Raw_Data.csv",
+            "filetype": "M",
+            "stationame": "rockingham",
+            "stationid": 11,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "AT02": "at02",
+                "RH02": "rh02"
+            }
+        },
+        {
+            "filename": "rolling_green_Raw_Data.csv",
+            "filetype": "A",
+            "stationame": "rolling_green",
+            "stationid": 12,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "PM2.5 Mass Conc": "pm2_5",
+                "PM10 Mass Conc": "pm10",
+                "SO2": "so2",
+                "CO": "co",
+                "NO": "no",
+                "NO2": "no2",
+                "NOx": "nox",
+                "O3": "o3"
+            }
+        },
+        {
+            "filename": "rolling_green_Met_Raw_Data.csv",
+            "filetype": "M",
+            "stationame": "rolling_green",
+            "stationid": 12,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "WSp": "sp10",
+                "Gust": "gu10",
+                "WDir": "dn10",
+                "Sigma": "sg10",
+                "AT10": "at10",
+                "RH": "rh10"
+            }
+        },
+        {
+            "filename": "south_lake_Raw_Data.csv",
+            "filetype": "A",
+            "stationame": "south_lake",
+            "stationid": 13,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "PM2.5 MC": "pm2_5",
+                "PM10 MC": "pm10",
+                "PMC MC": "pmcrs",
+                "SO2_ppb": "so2",
+                "CO_ppm": "co",
+                "NO_ppb": "no",
+                "NO2_ppb": "no2",
+                "NOx_ppb": "nox",
+                "O3_ppb": "o3"
+            }
+        },
+        {
+            "filename": "south_lake_Met_Raw_Data.csv",
+            "filetype": "M",
+            "stationame": "south_lake",
+            "stationid": 13,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "WSp": "sp10",
+                "Gust": "gu10",
+                "WDir": "dn10",
+                "Sigma": "sg10",
+                "AT02": "at02",
+                "AT10": "at10",
+                "DelT": "delt",
+                "RH": "rh10"
+            }
+        },
+        {
+            "filename": "swanbourne_Raw_Data.csv",
+            "filetype": "A",
+            "stationame": "swanbourne",
+            "stationid": 14,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "PM2.5_MC_ug_m3": "pm2_5",
+                "PM10_MC_ug_m3": "pm10",
+                "SO2_ppb": "so2",
+                "CO_ppm": "co",
+                "NO_ppb": "no",
+                "NO2_ppb": "no2",
+                "NOx_ppb": "nox",
+                "O3_ppb": "o3"
+            }
+        },
+        {
+            "filename": "swanbourne_Met_Raw_Data.csv",
+            "filetype": "M",
+            "stationame": "swanbourne",
+            "stationid": 14,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "WSp": "sp10",
+                "Gust": "gu10",
+                "WDir": "dn10",
+                "Sigma": "sg10",
+                "AT10": "at10",
+                "RH": "rh10"
+            }
+        },
+        {
+            "filename": "wattleup_Raw_Data.csv",
+            "filetype": "A",
+            "stationame": "wattleup",
+            "stationid": 15,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "PM2.5_MC_ug_m3": "pm2_5",
+                "PM10_MC_ug_m3": "pm10",
+                "SO2_ppb": "so2",
+                "CO_ppm": "co",
+                "NO_ppb": "no",
+                "NO2_ppb": "no2",
+                "NOx_ppb": "nox",
+                "O3_ppb": "o3"
+            }
+        },
+        {
+            "filename": "wattleup_Met_Raw_Data.csv",
+            "filetype": "M",
+            "stationame": "wattleup",
+            "stationid": 15,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "WSp": "sp10",
+                "Gust": "gu10",
+                "WDir": "dn10",
+                "Sigma": "sg10",
+                "AT02": "at02",
+                "AT10": "at10",
+                "DelT": "delt",
+                "RH": "rh10",
+                "AtPr": "pres",
+                "Rain": "rain",
+                "LWin": "lwin",
+                "Global": "grad",
+                "NetRad": "nrad"
+            }
+        },
+        {
+            "filename": "test_Raw_Data.csv",
+            "filetype": "A",
+            "stationame": "test",
+            "stationid": 0,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "PM2.5": "pm2_5",
+                "PM10": "pm10",
+                "PMc": "pmcrs",
+                "SO2_ppb": "so2",
+                "CO_ppm": "co",
+                "NO_ppb": "no",
+                "NO2_ppb": "no2",
+                "NOx_ppb": "nox",
+                "O3_ppb": "o3"
+            }
+        },
+        {
+            "filename": "test_Met_Raw_Data.csv",
+            "filetype": "M",
+            "stationame": "test",
+            "stationid": 0,
+            "columnnames": {
+                "Date_Time": "datetime",
+                "WSp": "sp10",
+                "Gust": "gu10",
+                "WDir": "dn10",
+                "Sigma": "sg10",
+                "AT02": "at02",
+                "AT10": "at10",
+                "DelT": "delt",
+                "RH": "rh10",
+                "AtPr": "pres",
+                "Rain": "rain",
+                "SWin": "swin",
+                "SWout": "swout",
+                "LWin": "lwin",
+                "LWout": "lwout",
+                "Net": "nrad"
+            }
+        }
+    ]
+}
