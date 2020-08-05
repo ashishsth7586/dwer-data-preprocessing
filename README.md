@@ -1,4 +1,4 @@
-# dwer-data-preprocessing
+# Weather Station Data Pre-Processing, Perth, Australia
 
 This project consists of a python script deployed in AWS Lambda which is triggered when a file is uploaded to S3 Bucket (Supplychain-test) every hour via FTP . 
 For each uploaded file, a single instance of lambda function is triggered. 
