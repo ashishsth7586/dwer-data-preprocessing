@@ -1,0 +1,105 @@
+WITH cte_stationmonth AS (
+         SELECT ref_station.station,
+            ref_station.station_name,
+            reft.year,
+            reft.month_num,
+            reft.month_name,
+            reft.hours_in_month
+           FROM ( SELECT date_part('year'::text, ref_time.datetime) AS year,
+                    date_part('month'::text, ref_time.datetime) AS month_num,
+                    to_char(ref_time.datetime, 'Month'::text) AS month_name,
+                    to_char(count(*), '9,999'::text) AS hours_in_month
+                   FROM ref.ref_time
+                  WHERE ref_time.datetime <= now()
+                  GROUP BY (date_part('year'::text, ref_time.datetime)), (date_part('month'::text, ref_time.datetime)), (to_char(ref_time.datetime, 'Month'::text))
+                  ORDER BY (date_part('year'::text, ref_time.datetime)), (date_part('month'::text, ref_time.datetime))) reft
+             CROSS JOIN ref.ref_station
+        ), cte_met AS (
+         SELECT met_1.station,
+            date_part('year'::text, met_1.datetime) AS year,
+            date_part('month'::text, met_1.datetime) AS month_num,
+            to_char(met_1.datetime, 'Month'::text) AS month_name,
+            to_char(count(*), '9,999'::text) AS met_count,
+            to_char(avg(met_1.sp04), '9,999.99'::text) AS avg_sp04,
+            to_char(avg(met_1.sp10), '9,999.99'::text) AS avg_sp10,
+            to_char(avg(met_1.gu04), '9,999.99'::text) AS avg_gu04,
+            to_char(avg(met_1.gu10), '9,999.99'::text) AS avg_gu10,
+            to_char(avg(met_1.dn04), '9,999.99'::text) AS avg_dn04,
+            to_char(avg(met_1.dn10), '9,999.99'::text) AS avg_dn10,
+            to_char(avg(met_1.sg04), '9,999.99'::text) AS avg_sg04,
+            to_char(avg(met_1.sg10), '9,999.99'::text) AS avg_sg10,
+            to_char(avg(met_1.at02), '9,999.99'::text) AS avg_at02,
+            to_char(avg(met_1.at10), '9,999.99'::text) AS avg_at10,
+            to_char(avg(met_1.delt), '9,999.99'::text) AS avg_delt,
+            to_char(avg(met_1.rh02), '9,999.99'::text) AS avg_rh02,
+            to_char(avg(met_1.rh10), '9,999.99'::text) AS avg_rh10,
+            to_char(avg(met_1.pres), '9,999.99'::text) AS avg_pres,
+            to_char(avg(met_1.rain), '9,999.99'::text) AS avg_rain,
+            to_char(avg(met_1.swin), '9,999.99'::text) AS avg_swin,
+            to_char(avg(met_1.swout), '9,999.99'::text) AS avg_swout,
+            to_char(avg(met_1.lwin), '9,999.99'::text) AS avg_lwin,
+            to_char(avg(met_1.lwout), '9,999.99'::text) AS avg_lwout,
+            to_char(avg(met_1.grad), '9,999.99'::text) AS avg_grad,
+            to_char(avg(met_1.nrad), '9,999.99'::text) AS avg_nrad
+           FROM core_data.dwer_met met_1
+          GROUP BY met_1.station, (date_part('year'::text, met_1.datetime)), (date_part('month'::text, met_1.datetime)), (to_char(met_1.datetime, 'Month'::text))
+          ORDER BY met_1.station, (date_part('year'::text, met_1.datetime)), (date_part('month'::text, met_1.datetime))
+        ), cte_aqm AS (
+         SELECT aqm_1.station,
+            date_part('year'::text, aqm_1.datetime) AS year,
+            date_part('month'::text, aqm_1.datetime) AS month_num,
+            to_char(aqm_1.datetime, 'Month'::text) AS month_name,
+            to_char(count(*), '9,999'::text) AS aqm_count,
+            to_char(avg(aqm_1.pm2_5), '9,999.99'::text) AS avg_pm2_5,
+            to_char(avg(aqm_1.pm10), '9,999.99'::text) AS avg_pm10,
+            to_char(avg(aqm_1.pmcrs), '9,999.99'::text) AS avg_pmcrs,
+            to_char(avg(aqm_1.so2), '9,999.99'::text) AS avg_so2,
+            to_char(avg(aqm_1.co), '9,999.99'::text) AS avg_co,
+            to_char(avg(aqm_1.no), '9,999.99'::text) AS avg_no,
+            to_char(avg(aqm_1.no2), '9,999.99'::text) AS avg_no2,
+            to_char(avg(aqm_1.nox), '9,999.99'::text) AS avg_nox,
+            to_char(avg(aqm_1.o3), '9,999.99'::text) AS avg_o3
+           FROM core_data.dwer_aqm aqm_1
+          GROUP BY aqm_1.station, (date_part('year'::text, aqm_1.datetime)), (date_part('month'::text, aqm_1.datetime)), (to_char(aqm_1.datetime, 'Month'::text))
+          ORDER BY aqm_1.station, (date_part('year'::text, aqm_1.datetime)), (date_part('month'::text, aqm_1.datetime))
+        )
+ SELECT ref.station_name,
+    ref.year,
+    ref.month_num,
+    ref.month_name,
+    ref.hours_in_month,
+    met.met_count,
+    aqm.aqm_count,
+    met.avg_sp04,
+    met.avg_sp10,
+    met.avg_gu04,
+    met.avg_gu10,
+    met.avg_dn04,
+    met.avg_dn10,
+    met.avg_sg04,
+    met.avg_sg10,
+    met.avg_at02,
+    met.avg_at10,
+    met.avg_delt,
+    met.avg_rh02,
+    met.avg_rh10,
+    met.avg_pres,
+    met.avg_rain,
+    met.avg_swin,
+    met.avg_swout,
+    met.avg_lwin,
+    met.avg_lwout,
+    met.avg_grad,
+    met.avg_nrad,
+    aqm.avg_pm2_5,
+    aqm.avg_pm10,
+    aqm.avg_pmcrs,
+    aqm.avg_so2,
+    aqm.avg_co,
+    aqm.avg_no,
+    aqm.avg_no2,
+    aqm.avg_nox,
+    aqm.avg_o3
+   FROM cte_stationmonth ref
+     LEFT JOIN cte_met met ON met.station = ref.station AND met.year = ref.year AND met.month_num = ref.month_num
+     LEFT JOIN cte_aqm aqm ON aqm.station = ref.station AND aqm.year = ref.year AND aqm.month_num = ref.month_num;
